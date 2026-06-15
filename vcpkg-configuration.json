@@ -1,0 +1,22 @@
+{
+  "default-registry": {
+    "kind": "builtin",
+    "baseline": "4dbd4a48908ff48d26b3cf063f8c9e1da5759185"
+  },
+  "registries": [
+    {
+      "kind": "git",
+      "repository": "https://github.com/Monitor221hz/modding-vcpkg-ports",
+      "baseline": "190a7e0768c63893a354b6f6dfabbebb6f8166de",
+      "packages": [
+        "commonlibsse-ng-fork",
+        "commonlibsse-ng",
+        "commonlibsse-ng-ae",
+        "commonlibsse-ng-se",
+        "commonlibsse-ng-vr",
+        "commonlibsse-ng-flatrim",
+        "commonlibsse-ng-prebuilt"
+      ]
+    }
+  ]
+}

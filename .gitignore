@@ -1,0 +1,65 @@
+# Local build output
+/build/
+/out/
+/vcpkg_installed/
+
+# Local notes and one-off packaging helpers
+/docs/
+/Build-SkyDima.ps1
+
+# CMake and vcpkg generated state
+CMakeUserPresets.json
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+DartConfiguration.tcl
+Testing/
+install_manifest.txt
+vcpkg-manifest-install.log
+
+# Visual Studio and editor state
+/.vs/
+/.vscode/
+/.playwright-mcp/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+
+# Compiler and linker output
+*.obj
+*.o
+*.pch
+*.pdb
+*.idb
+*.ilk
+*.lib
+*.exp
+*.dll
+*.exe
+*.log
+*.tlog
+*.lastbuildstate
+*.recipe
+*.module.json
+*.d.json
+
+# Packaged archives and local release bundles
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+*.nupkg
+*.msi
+
+# Misc local/cache files
+*.cache
+*.tmp
+*.temp
+Thumbs.db
+Desktop.ini
