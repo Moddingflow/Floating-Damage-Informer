@@ -2,6 +2,10 @@
 
 Floating Damage Informer is a native SKSE C++ plugin for Skyrim that displays floating damage numbers above actors damaged in game. The built plugin file is named `FloatingDamageNumbersNG.dll`.
 
+![Floating Damage Informer in-game example](assets/screenshots/floating-damage-informer-example.jpg)
+
+In-game example showing floating damage numbers during combat. Screenshot content from Skyrim is shown for illustrative purposes only.
+
 The plugin is designed to stay lightweight:
 
 - no Papyrus scripts
@@ -171,6 +175,7 @@ The tests cover configuration parsing, damage filtering, aggregation, display ca
 ## Project Layout
 
 ```text
+assets/                          Repository images and screenshots
 include/                         Public project headers
 src/                             Plugin and core implementation
 src/Skyrim/                      Skyrim/CommonLib runtime integration
