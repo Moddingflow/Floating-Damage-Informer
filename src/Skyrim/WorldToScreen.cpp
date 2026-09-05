@@ -6,6 +6,7 @@
 #include "RE/M/Main.h"
 #include "RE/N/NiAVObject.h"
 #include "RE/N/NiCamera.h"
+#include "REL/Module.h"
 
 #include <algorithm>
 #include <array>
@@ -226,8 +227,12 @@ namespace FDN::Skyrim
                 port = kUnitPort;
             }
 
+            const float (*worldToCamera)[4] = REL::Module::IsVR()
+                ? camera.GetVRRuntimeData().worldToCam
+                : camera.GetRuntimeData().worldToCam;
+
             return RE::NiCamera::WorldPtToScreenPt3(
-                camera.GetRuntimeData().worldToCam,
+                worldToCamera,
                 port,
                 point,
                 x,

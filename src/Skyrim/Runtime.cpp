@@ -3,7 +3,6 @@
 #include "FDN/Skyrim/HUDHooks.h"
 #include "FDN/Skyrim/ScaleformRenderer.h"
 
-#include "RE/Offsets.h"
 #include "RE/U/UI.h"
 #include "REX/W32/KERNEL32.h"
 #include "SKSE/API.h"

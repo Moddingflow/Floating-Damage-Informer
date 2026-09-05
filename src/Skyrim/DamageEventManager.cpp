@@ -13,6 +13,7 @@
 #include "RE/P/PlayerCharacter.h"
 #include "RE/S/ScriptEventSourceHolder.h"
 #include "RE/T/TESForm.h"
+#include "REL/Module.h"
 #include "REL/Relocation.h"
 
 #include <algorithm>
@@ -145,9 +146,10 @@ namespace FDN::Skyrim
             }
 
             REL::Relocation<std::uintptr_t> vtbl{ RE::VTABLE_Actor[0] };
-            originalHandleHealthDamage = vtbl.write_vfunc(0x104, HandleHealthDamage);
+            const std::size_t vfuncIndex = REL::Module::IsVR() ? 0x106 : 0x104;
+            originalHandleHealthDamage = vtbl.write_vfunc(vfuncIndex, HandleHealthDamage);
             healthDamageHookInstalled = true;
-            spdlog::info("Actor::HandleHealthDamage hook installed");
+            spdlog::info("Actor::HandleHealthDamage hook installed at vtable slot 0x{:X}", vfuncIndex);
             return true;
         }
     }

@@ -1,10 +1,13 @@
 {
   "name": "floating-damage-numbers-ng",
-  "version-string": "0.1.0",
+  "version-string": "0.2.0",
   "description": "Native SKSE floating damage number plugin for Skyrim SE/AE/GOG/VR.",
-  "license": null,
+  "license": "MIT",
   "dependencies": [
-    "commonlibsse-ng-fork",
+    "directxmath",
+    "directxtk",
+    "fmt",
+    "rapidcsv",
     "spdlog"
   ]
 }
